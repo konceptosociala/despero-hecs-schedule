@@ -12,7 +12,7 @@ repository = "https://github.com/ten3roberts/hecs-schedule"
 [dependencies]
 anyhow = "1.0.58"
 atomic_refcell = "0.1.8"
-hecs = { path = "../hecs", features = [ "macros" ] }
+hecs = { git = "https://github.com/konceptosociala/despero-hecs", features = [ "macros" ] }
 rayon = { version = "1.5.3", optional = true }
 smallvec = "1.9.0"
 thiserror = "1.0.31"
