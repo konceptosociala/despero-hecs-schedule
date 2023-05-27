@@ -1,5 +1,5 @@
 [package]
-name = "hecs-schedule"
+name = "despero-hecs-schedule"
 version = "0.6.2"
 edition = "2021"
 description = "Provides shedulable systems and parallel execution for hecs"
@@ -7,12 +7,12 @@ readme ="README.md"
 license-file = "LICENSE"
 authors = [ "Tei Roberts" ]
 documentation = "https://docs.rs/hecs-schedule"
-repository = "https://github.com/ten3roberts/hecs-schedule"
+repository = "https://github.com/konceptosociala/despero-hecs-schedule"
 
 [dependencies]
 anyhow = "1.0.58"
 atomic_refcell = "0.1.8"
-hecs = { git = "https://github.com/konceptosociala/despero-hecs", features = [ "macros" ] }
+hecs = { package = "despero-hecs", version = "0.9.1", features = [ "macros" ] }
 rayon = { version = "1.5.3", optional = true }
 smallvec = "1.9.0"
 thiserror = "1.0.31"
