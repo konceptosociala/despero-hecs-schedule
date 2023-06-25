@@ -81,28 +81,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "despero-hecs"
-version = "0.9.1-f"
-dependencies = [
- "hashbrown",
- "hecs-macros",
- "lazy_static",
- "spin 0.9.8",
-]
-
-[[package]]
-name = "despero-hecs-schedule"
-version = "0.6.2"
-dependencies = [
- "anyhow",
- "atomic_refcell",
- "despero-hecs",
- "rayon",
- "smallvec",
- "thiserror",
-]
-
-[[package]]
 name = "either"
 version = "1.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -120,6 +98,7 @@ dependencies = [
 [[package]]
 name = "hecs-macros"
 version = "0.8.2"
+source = "git+https://github.com/konceptosociala/sonja-hecs#4c15f310da10a21f36c6d97399662f490b89af03"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -226,6 +205,29 @@ name = "smallvec"
 version = "1.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a507befe795404456341dfab10cef66ead4c041f62b8b11bbb92bffe5d0953e0"
+
+[[package]]
+name = "sonja-hecs"
+version = "0.2.0"
+source = "git+https://github.com/konceptosociala/sonja-hecs#4c15f310da10a21f36c6d97399662f490b89af03"
+dependencies = [
+ "hashbrown",
+ "hecs-macros",
+ "lazy_static",
+ "spin 0.9.8",
+]
+
+[[package]]
+name = "sonja-hecs-schedule"
+version = "0.6.2"
+dependencies = [
+ "anyhow",
+ "atomic_refcell",
+ "rayon",
+ "smallvec",
+ "sonja-hecs",
+ "thiserror",
+]
 
 [[package]]
 name = "spin"

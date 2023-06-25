@@ -1,5 +1,5 @@
 [package]
-name = "despero-hecs-schedule"
+name = "sonja-hecs-schedule"
 version = "0.6.2"
 edition = "2021"
 description = "Provides shedulable systems and parallel execution for hecs"
@@ -12,7 +12,7 @@ repository = "https://github.com/konceptosociala/despero-hecs-schedule"
 [dependencies]
 anyhow = "1.0.58"
 atomic_refcell = "0.1.8"
-hecs = { package = "despero-hecs", path = "../sonja-hecs", features = [ "macros" ] }
+hecs = { package = "sonja-hecs", git = "https://github.com/konceptosociala/sonja-hecs", features = [ "macros" ] }
 rayon = { version = "1.5.3", optional = true }
 smallvec = "1.9.0"
 thiserror = "1.0.31"
