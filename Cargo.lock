@@ -82,9 +82,7 @@ dependencies = [
 
 [[package]]
 name = "despero-hecs"
-version = "0.9.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c11c9be70b47e049139fd6de61573bb628fc808631006f3b7690b0c4d82781e1"
+version = "0.9.1-f"
 dependencies = [
  "hashbrown",
  "hecs-macros",
@@ -122,8 +120,6 @@ dependencies = [
 [[package]]
 name = "hecs-macros"
 version = "0.8.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "14883fb70dcf2363b5dd2321b9473117d91ebadf211959df748cec6927fd3765"
 dependencies = [
  "proc-macro2",
  "quote",
